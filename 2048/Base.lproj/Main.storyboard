@@ -1,7 +1,11 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="13122.16" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="BYZ-38-t0r">
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="14490.70" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="BYZ-38-t0r">
+    <device id="retina4_0" orientation="portrait">
+        <adaptation id="fullscreen"/>
+    </device>
     <dependencies>
-        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="13104.12"/>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="14490.49"/>
         <capability name="Safe area layout guides" minToolsVersion="9.0"/>
         <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
     </dependencies>
@@ -9,16 +13,162 @@
         <!--View Controller-->
         <scene sceneID="tne-QT-ifu">
             <objects>
-                <viewController id="BYZ-38-t0r" customClass="ViewController" customModuleProvider="target" sceneMemberID="viewController">
+                <viewController id="BYZ-38-t0r" customClass="ViewController" customModule="_048" customModuleProvider="target" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" id="8bC-Xf-vdC">
-                        <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
+                        <rect key="frame" x="0.0" y="0.0" width="320" height="568"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" translatesAutoresizingMaskIntoConstraints="NO" id="Ghj-zD-Yh3">
+                                <rect key="frame" x="26" y="150" width="268" height="268"/>
+                                <subviews>
+                                    <stackView opaque="NO" contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="to1-Eb-I0q">
+                                        <rect key="frame" x="0.0" y="0.0" width="268" height="67"/>
+                                        <subviews>
+                                            <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="box0" translatesAutoresizingMaskIntoConstraints="NO" id="gIQ-po-djT">
+                                                <rect key="frame" x="0.0" y="0.0" width="67" height="67"/>
+                                            </imageView>
+                                            <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="box0" translatesAutoresizingMaskIntoConstraints="NO" id="GUa-b0-Syw">
+                                                <rect key="frame" x="67" y="0.0" width="67" height="67"/>
+                                            </imageView>
+                                            <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="box0" translatesAutoresizingMaskIntoConstraints="NO" id="hvl-NE-04l">
+                                                <rect key="frame" x="134" y="0.0" width="67" height="67"/>
+                                            </imageView>
+                                            <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="box0" translatesAutoresizingMaskIntoConstraints="NO" id="AJL-67-Izk">
+                                                <rect key="frame" x="201" y="0.0" width="67" height="67"/>
+                                            </imageView>
+                                        </subviews>
+                                    </stackView>
+                                    <stackView opaque="NO" contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="7JO-kX-P1p">
+                                        <rect key="frame" x="0.0" y="67" width="268" height="67"/>
+                                        <subviews>
+                                            <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="box0" translatesAutoresizingMaskIntoConstraints="NO" id="Ur3-l4-NB9">
+                                                <rect key="frame" x="0.0" y="0.0" width="67" height="67"/>
+                                            </imageView>
+                                            <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="box0" translatesAutoresizingMaskIntoConstraints="NO" id="Dra-HQ-4pM">
+                                                <rect key="frame" x="67" y="0.0" width="67" height="67"/>
+                                            </imageView>
+                                            <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="box0" translatesAutoresizingMaskIntoConstraints="NO" id="DxB-k1-NGl">
+                                                <rect key="frame" x="134" y="0.0" width="67" height="67"/>
+                                            </imageView>
+                                            <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="box0" translatesAutoresizingMaskIntoConstraints="NO" id="27Y-aF-mTw">
+                                                <rect key="frame" x="201" y="0.0" width="67" height="67"/>
+                                            </imageView>
+                                        </subviews>
+                                    </stackView>
+                                    <stackView opaque="NO" contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="JNx-JJ-TZF">
+                                        <rect key="frame" x="0.0" y="134" width="268" height="67"/>
+                                        <subviews>
+                                            <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="box0" translatesAutoresizingMaskIntoConstraints="NO" id="qwv-Q4-Fv3">
+                                                <rect key="frame" x="0.0" y="0.0" width="67" height="67"/>
+                                            </imageView>
+                                            <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="box0" translatesAutoresizingMaskIntoConstraints="NO" id="ZMd-T2-lzR">
+                                                <rect key="frame" x="67" y="0.0" width="67" height="67"/>
+                                            </imageView>
+                                            <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="box0" translatesAutoresizingMaskIntoConstraints="NO" id="6ht-WS-ho6">
+                                                <rect key="frame" x="134" y="0.0" width="67" height="67"/>
+                                            </imageView>
+                                            <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="box0" translatesAutoresizingMaskIntoConstraints="NO" id="GIs-LE-Zzq">
+                                                <rect key="frame" x="201" y="0.0" width="67" height="67"/>
+                                            </imageView>
+                                        </subviews>
+                                    </stackView>
+                                    <stackView opaque="NO" contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="MVM-b7-5L0">
+                                        <rect key="frame" x="0.0" y="201" width="268" height="67"/>
+                                        <subviews>
+                                            <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="box0" translatesAutoresizingMaskIntoConstraints="NO" id="Xcq-tv-tZK">
+                                                <rect key="frame" x="0.0" y="0.0" width="67" height="67"/>
+                                            </imageView>
+                                            <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="box0" translatesAutoresizingMaskIntoConstraints="NO" id="BgW-s7-Nts">
+                                                <rect key="frame" x="67" y="0.0" width="67" height="67"/>
+                                            </imageView>
+                                            <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="box0" translatesAutoresizingMaskIntoConstraints="NO" id="mu4-zc-50h">
+                                                <rect key="frame" x="134" y="0.0" width="67" height="67"/>
+                                            </imageView>
+                                            <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="box0" translatesAutoresizingMaskIntoConstraints="NO" id="JR9-b5-ogh">
+                                                <rect key="frame" x="201" y="0.0" width="67" height="67"/>
+                                            </imageView>
+                                        </subviews>
+                                    </stackView>
+                                </subviews>
+                            </stackView>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="2048" textAlignment="center" lineBreakMode="tailTruncation" numberOfLines="2" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="MlV-ZQ-WgW">
+                                <rect key="frame" x="138" y="76.5" width="44.5" height="23.5"/>
+                                <fontDescription key="fontDescription" name="HelveticaNeue" family="Helvetica Neue" pointSize="20"/>
+                                <nil key="textColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="1w6-wP-GSZ">
+                                <rect key="frame" x="132.5" y="448" width="55" height="32"/>
+                                <fontDescription key="fontDescription" name="HelveticaNeue" family="Helvetica Neue" pointSize="17"/>
+                                <state key="normal" title="Restart"/>
+                                <connections>
+                                    <action selector="restart:" destination="BYZ-38-t0r" eventType="touchUpInside" id="stq-RD-xLH"/>
+                                </connections>
+                            </button>
+                        </subviews>
                         <color key="backgroundColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                        <gestureRecognizers/>
+                        <constraints>
+                            <constraint firstItem="Ghj-zD-Yh3" firstAttribute="centerY" secondItem="8bC-Xf-vdC" secondAttribute="centerY" id="Gcq-u2-AkM"/>
+                            <constraint firstItem="MlV-ZQ-WgW" firstAttribute="centerX" secondItem="8bC-Xf-vdC" secondAttribute="centerX" id="HzB-vF-I0d"/>
+                            <constraint firstItem="1w6-wP-GSZ" firstAttribute="top" secondItem="Ghj-zD-Yh3" secondAttribute="bottom" constant="30" id="g10-dA-Eaf"/>
+                            <constraint firstItem="1w6-wP-GSZ" firstAttribute="centerX" secondItem="8bC-Xf-vdC" secondAttribute="centerX" id="oYW-n7-yHE"/>
+                            <constraint firstItem="Ghj-zD-Yh3" firstAttribute="centerX" secondItem="8bC-Xf-vdC" secondAttribute="centerX" id="vr1-kj-xRf"/>
+                            <constraint firstItem="Ghj-zD-Yh3" firstAttribute="top" secondItem="MlV-ZQ-WgW" secondAttribute="bottom" constant="50" id="wjL-Te-kXe"/>
+                        </constraints>
                         <viewLayoutGuide key="safeArea" id="6Tk-OE-BBY"/>
+                        <connections>
+                            <outletCollection property="gestureRecognizers" destination="gtB-Tl-bME" appends="YES" id="z7A-QJ-Bi9"/>
+                            <outletCollection property="gestureRecognizers" destination="54z-R6-Gtp" appends="YES" id="j27-HU-OFK"/>
+                            <outletCollection property="gestureRecognizers" destination="Pik-Qb-eVu" appends="YES" id="z60-LM-xTd"/>
+                            <outletCollection property="gestureRecognizers" destination="lKw-Td-5fk" appends="YES" id="3mh-D6-0Q6"/>
+                        </connections>
                     </view>
+                    <connections>
+                        <outlet property="box1x1" destination="gIQ-po-djT" id="7me-OV-INl"/>
+                        <outlet property="box1x2" destination="GUa-b0-Syw" id="qrq-UK-1hO"/>
+                        <outlet property="box1x3" destination="hvl-NE-04l" id="jlq-ST-yod"/>
+                        <outlet property="box1x4" destination="AJL-67-Izk" id="02w-PQ-vuu"/>
+                        <outlet property="box2x1" destination="Ur3-l4-NB9" id="9DE-OJ-CWP"/>
+                        <outlet property="box2x2" destination="Dra-HQ-4pM" id="M6R-dL-7zE"/>
+                        <outlet property="box2x3" destination="DxB-k1-NGl" id="S9n-SY-t0S"/>
+                        <outlet property="box2x4" destination="27Y-aF-mTw" id="QoO-8b-HQp"/>
+                        <outlet property="box3x1" destination="qwv-Q4-Fv3" id="7RY-hC-aN1"/>
+                        <outlet property="box3x2" destination="ZMd-T2-lzR" id="Wx5-vG-oFo"/>
+                        <outlet property="box3x3" destination="6ht-WS-ho6" id="9af-C0-flC"/>
+                        <outlet property="box3x4" destination="GIs-LE-Zzq" id="wx8-ay-pPN"/>
+                        <outlet property="box4x1" destination="Xcq-tv-tZK" id="kYz-DI-Y8J"/>
+                        <outlet property="box4x2" destination="BgW-s7-Nts" id="ecW-Kw-uAa"/>
+                        <outlet property="box4x3" destination="mu4-zc-50h" id="bs0-4G-uF4"/>
+                        <outlet property="box4x4" destination="JR9-b5-ogh" id="xoU-Ti-0s4"/>
+                        <outlet property="label" destination="MlV-ZQ-WgW" id="ROc-aL-yzg"/>
+                    </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
+                <swipeGestureRecognizer direction="right" id="gtB-Tl-bME">
+                    <connections>
+                        <action selector="swipeRight:" destination="BYZ-38-t0r" id="kyW-ig-MQd"/>
+                    </connections>
+                </swipeGestureRecognizer>
+                <swipeGestureRecognizer direction="left" id="54z-R6-Gtp">
+                    <connections>
+                        <action selector="swipeLeft:" destination="BYZ-38-t0r" id="iR5-Lv-Hck"/>
+                    </connections>
+                </swipeGestureRecognizer>
+                <swipeGestureRecognizer direction="down" id="Pik-Qb-eVu">
+                    <connections>
+                        <action selector="swipeDown:" destination="BYZ-38-t0r" id="jCS-rn-7QP"/>
+                    </connections>
+                </swipeGestureRecognizer>
+                <swipeGestureRecognizer direction="up" id="lKw-Td-5fk">
+                    <connections>
+                        <action selector="swipeUp:" destination="BYZ-38-t0r" id="yYy-RI-PaM"/>
+                    </connections>
+                </swipeGestureRecognizer>
             </objects>
         </scene>
     </scenes>
+    <resources>
+        <image name="box0" width="67" height="67"/>
+    </resources>
 </document>
