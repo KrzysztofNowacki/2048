@@ -10,6 +10,13 @@ import UIKit
 
 class ViewController: UIViewController {
     
+    struct Keys{
+        static let savedProfile  = "saved"
+        static let savePoints    = "savePoints"
+        static let saveScore     = "saveScore"
+        static let saveSteps     = "saveSteps"
+    }
+    let defaults = UserDefaults.standard
     var points = Array(repeating: 0, count: 16)
     
     @IBOutlet weak var box1x1: UIImageView!
@@ -36,9 +43,11 @@ class ViewController: UIViewController {
     
     func addStep(){
         steps+=1
+        defaults.set(steps, forKey: Keys.saveSteps)
     }
     func addScore(){
         score+=1
+        defaults.set(score, forKey: Keys.saveScore)
     }
     
     func winning(){
@@ -54,6 +63,8 @@ class ViewController: UIViewController {
     }
     
     func changeBoxes(){
+        defaults.set(true, forKey: Keys.savedProfile)
+        defaults.set(points, forKey: Keys.savePoints)
         box1x1.image = UIImage(named: "box\(points[0])")
         box1x2.image = UIImage(named: "box\(points[1])")
         box1x3.image = UIImage(named: "box\(points[2])")
@@ -110,10 +121,16 @@ class ViewController: UIViewController {
     
     override func viewDidLoad() {
         super.viewDidLoad()
+        let saved = defaults.bool(forKey: Keys.savedProfile)
+        if saved{
+            points = defaults.array(forKey: Keys.savePoints) as! [Int]
+            score = defaults.integer(forKey: Keys.saveScore)
+            steps = defaults.integer(forKey: Keys.saveSteps)
+        }
         changeBoxes()
-        score=0
-        steps=0
-        DispatchQueue.main.asyncAfter(deadline: .now() + 0.5, execute: {self.addBox()})
+        if saved == false{
+            DispatchQueue.main.asyncAfter(deadline: .now() + 0.5, execute: {self.addBox()})
+        }
     }
     @IBAction func swipeRight(_ sender: UISwipeGestureRecognizer) {
         addStep()
